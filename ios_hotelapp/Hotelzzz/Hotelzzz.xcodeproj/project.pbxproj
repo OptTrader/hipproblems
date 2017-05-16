@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A5AFE731ECBA2360067D208 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AFE721ECBA2360067D208 /* ColorScheme.swift */; };
+		7A5AFE751ECBA24E0067D208 /* UIColor+HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AFE741ECBA24E0067D208 /* UIColor+HexColors.swift */; };
 		F222BCD61E81E72500CE0EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BCD51E81E72500CE0EB2 /* AppDelegate.swift */; };
 		F222BCD81E81E72500CE0EB2 /* SearchFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BCD71E81E72500CE0EB2 /* SearchFormViewController.swift */; };
 		F222BCDB1E81E72500CE0EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F222BCD91E81E72500CE0EB2 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A5AFE721ECBA2360067D208 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		7A5AFE741ECBA24E0067D208 /* UIColor+HexColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColors.swift"; sourceTree = "<group>"; };
 		F222BCD21E81E72500CE0EB2 /* Hotelzzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotelzzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F222BCD51E81E72500CE0EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F222BCD71E81E72500CE0EB2 /* SearchFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A5AFE761ECBA3020067D208 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A5AFE721ECBA2360067D208 /* ColorScheme.swift */,
+				7A5AFE741ECBA24E0067D208 /* UIColor+HexColors.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F222BCC91E81E72400CE0EB2 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +108,7 @@
 				F222BCDE1E81E72500CE0EB2 /* LaunchScreen.storyboard */,
 				F222BCE11E81E72500CE0EB2 /* Info.plist */,
 				F27251341E95A60E00222BC8 /* UIViewController+Extensions.swift */,
+				7A5AFE761ECBA3020067D208 /* Resources */,
 			);
 			path = Hotelzzz;
 			sourceTree = "<group>";
@@ -214,8 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F222BCD81E81E72500CE0EB2 /* SearchFormViewController.swift in Sources */,
+				7A5AFE751ECBA24E0067D208 /* UIColor+HexColors.swift in Sources */,
 				F222BCD61E81E72500CE0EB2 /* AppDelegate.swift in Sources */,
 				F222BCF81E83175000CE0EB2 /* SearchViewController.swift in Sources */,
+				7A5AFE731ECBA2360067D208 /* ColorScheme.swift in Sources */,
 				F222BCF61E830D4C00CE0EB2 /* DatePickerViewController.swift in Sources */,
 				F27251351E95A60E00222BC8 /* UIViewController+Extensions.swift in Sources */,
 				F222BCFA1E83235F00CE0EB2 /* HotelViewController.swift in Sources */,
