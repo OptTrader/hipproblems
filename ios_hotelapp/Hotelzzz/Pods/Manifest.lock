@@ -1,0 +1,18 @@
+PODS:
+  - BRYXBanner (0.7.2)
+  - CDAlertView (0.6.0)
+  - SwiftSpinner (1.2.1)
+
+DEPENDENCIES:
+  - BRYXBanner
+  - CDAlertView
+  - SwiftSpinner
+
+SPEC CHECKSUMS:
+  BRYXBanner: ed407a56c53f2add0aaa16f810062eac48d802cf
+  CDAlertView: e6f365fa0fac7349197e7ea4bd7810c069215cf4
+  SwiftSpinner: 62a28bbb4035f252a1e91b0e17fc40bdbbfa0aab
+
+PODFILE CHECKSUM: 2fa9425d1d06c4ff146a7b977d8ccb9c4de452b3
+
+COCOAPODS: 1.2.0.beta.1

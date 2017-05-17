@@ -1,0 +1,1174 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12B1266D463E38B918C6D0F2D66C155B /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC272D99F9025A6FCE531CD51A15D9C /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		139FF6DA1D05B90F2631E069C8D13832 /* BRYXBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2246BEAFB2094D613B59D0A9BD14F6E8 /* BRYXBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		177A46EA487255FEF53454F1E3DE2723 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B564058B218BC0D31B49632D6A9BBD2 /* ImageHelper.swift */; };
+		3A64A63ED98B1AF2295B0DE904896702 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE6C0DBE78EC59EA45208EEEFF5E807 /* SwiftSpinner.swift */; };
+		484977210E3DE2D043FDB3B5C76C5F78 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51470B427D3879672EE0B26E5218BC04 /* SwiftSpinner-dummy.m */; };
+		49512C5E482B94F34654AB784EFE0611 /* CDAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06027A73999F0DCE100AA7216FC55D54 /* CDAlertView.bundle */; };
+		4F1C59AD71C484C610284C91BA7911A2 /* Pods-Hotelzzz-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 345A8781614BA248A8DA194D8606DDA6 /* Pods-Hotelzzz-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B847756BE6BCBD0307B3B25556A5FF7 /* Pods-Hotelzzz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF18A15110D9EF5CAC4A79848E7EDBA /* Pods-Hotelzzz-dummy.m */; };
+		676C1D7B9909AD00CEC0071CAE28B5BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		785D8DA08BB47D25289C1ACED7F270EB /* CDAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F37A59C954C183199634A053EC40F77B /* CDAlertView-dummy.m */; };
+		85D793A244F6E144AC81BE59B147E1A2 /* CDAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF69E1CD025A74C04F2E312D3971AD2 /* CDAlertView.swift */; };
+		904CB5C0BC590834A3C20604321E3703 /* Pods-HotelzzzTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C7FB1A915DEDD293D37E461397328 /* Pods-HotelzzzTests-dummy.m */; };
+		9376BEF935E32C7927DF99A961A392D7 /* Pods-HotelzzzTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C9BF1F330BC663D6EC8325DF2043CEA /* Pods-HotelzzzTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CEE806C686E8F80DADE5C41C8D20F37 /* BRYXBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B94B5836B113480AE9BB9A9CC065E44B /* BRYXBanner-dummy.m */; };
+		9FD7DDE53F9EF82FEC5515E6D42F7475 /* CDAlertHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7BAFFABFDD8802808B1EA83A92799 /* CDAlertHeaderView.swift */; };
+		AEFEDB588257462A654E92018127BD94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		B5B4B4360749E1D13CF2C52D04F56064 /* CDAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B998AB2EF41EBFFFC90948B58CD00C6 /* CDAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9A8B647A9CA215444CE33C17F6FD94F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		C0379FEF9258A930B8B0D633BF9E4682 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		CFBD4BDD68023529A9ACE2A85EC65ADE /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B47168813B9C491E6281417BC526EA7 /* Banner.swift */; };
+		DDA5FEC2649A4CC2E74661569A161B6F /* LayoutConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9876062A9DF84B19FC96714D951D1F /* LayoutConstraintsExtension.swift */; };
+		EA6C66A6B0C5DCC9E01E61F8EE20F181 /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CD81B6112A3C7E3E8B119C7029080C8 /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEBC2E02CCF86D11EDA2A1253202B37D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		F408FDBFC38CCA098969881D1C681B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9F806D82101F962A16D3E8F9D3320 /* Assets.xcassets */; };
+		F4B651FC90A318063FE60E3A71808D02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		F858215DA8521C35488052F43614E88F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		784652BFD4988D839BCD90D0204BF375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F3B36547C3C2CC3060475E614BCBF32;
+			remoteInfo = BRYXBanner;
+		};
+		7F5384EE97FE6AED4FE05543734CFE93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6912206FC0B4F3E0FF60337B72D24538;
+			remoteInfo = SwiftSpinner;
+		};
+		90FA6BF057496F761F760326AB409920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 369C26E0019831DFC30E7122499AB269;
+			remoteInfo = CDAlertView;
+		};
+		9E022DE6025B80186394648B956C2EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4BDF1191BBE4F429F08A241D8B53E2A;
+			remoteInfo = "CDAlertView-CDAlertView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06027A73999F0DCE100AA7216FC55D54 /* CDAlertView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CDAlertView.bundle; path = CDAlertView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0605E643F72B22C730A1F3E5CADB0395 /* Pods-Hotelzzz-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hotelzzz-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0ADD48A4157B2976D022A5E4719C54F7 /* Pods-HotelzzzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HotelzzzTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B9876062A9DF84B19FC96714D951D1F /* LayoutConstraintsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintsExtension.swift; path = CDAlertView/Classes/LayoutConstraintsExtension.swift; sourceTree = "<group>"; };
+		0FE924C3F8061F2FB3DAAB21DDBEDFBE /* Pods-HotelzzzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HotelzzzTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FF69E1CD025A74C04F2E312D3971AD2 /* CDAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertView.swift; path = CDAlertView/Classes/CDAlertView.swift; sourceTree = "<group>"; };
+		1578D0377C58B5095CED6C1198DA4820 /* CDAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDAlertView.framework; path = CDAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		207CA07E4FBF1975B95770FA47A0EBE2 /* Pods-Hotelzzz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Hotelzzz.modulemap"; sourceTree = "<group>"; };
+		2246BEAFB2094D613B59D0A9BD14F6E8 /* BRYXBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRYXBanner-umbrella.h"; sourceTree = "<group>"; };
+		230BDF25C44CC5157FD13B2A7B3673A3 /* Pods_Hotelzzz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hotelzzz.framework; path = "Pods-Hotelzzz.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB9F806D82101F962A16D3E8F9D3320 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CDAlertView/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		345A8781614BA248A8DA194D8606DDA6 /* Pods-Hotelzzz-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hotelzzz-umbrella.h"; sourceTree = "<group>"; };
+		370CADC71714C33433699F2E9F2E4F9B /* Pods-Hotelzzz-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hotelzzz-acknowledgements.plist"; sourceTree = "<group>"; };
+		3CD81B6112A3C7E3E8B119C7029080C8 /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
+		3DC272D99F9025A6FCE531CD51A15D9C /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
+		42D7999A3FFF07800C92300B5185D6A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		452761C54BFAF688A30BBEDC83EA9565 /* Pods-HotelzzzTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HotelzzzTests-frameworks.sh"; sourceTree = "<group>"; };
+		46391AC9523D8164919F613846A1D2DE /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
+		4B47168813B9C491E6281417BC526EA7 /* Banner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Banner.swift; path = Pod/Classes/Banner.swift; sourceTree = "<group>"; };
+		4B998AB2EF41EBFFFC90948B58CD00C6 /* CDAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-umbrella.h"; sourceTree = "<group>"; };
+		4D649BAB858EA1AB7C0ED0E980F49D98 /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
+		51470B427D3879672EE0B26E5218BC04 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
+		5CF5791E564321969CB4D6F81A80193A /* CDAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CDAlertView.modulemap; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		625ED2EB342ED6432FAF80E2C51790F6 /* BRYXBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BRYXBanner.xcconfig; sourceTree = "<group>"; };
+		68D6D0F762518F78A48689D2909C72D2 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		6AB0870837A93B87F2B85358E39B4F5D /* BRYXBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRYXBanner-prefix.pch"; sourceTree = "<group>"; };
+		6BE6C0DBE78EC59EA45208EEEFF5E807 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
+		79E78387100F375DC64989BA420CF241 /* CDAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-prefix.pch"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FF18A15110D9EF5CAC4A79848E7EDBA /* Pods-Hotelzzz-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hotelzzz-dummy.m"; sourceTree = "<group>"; };
+		810923D5E5FF2FD6FBBDDF38DFE527C5 /* Pods-Hotelzzz-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hotelzzz-resources.sh"; sourceTree = "<group>"; };
+		81CA5C22FEDCD0B938211E7CA38FC4E3 /* BRYXBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BRYXBanner.framework; path = BRYXBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9BF1F330BC663D6EC8325DF2043CEA /* Pods-HotelzzzTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HotelzzzTests-umbrella.h"; sourceTree = "<group>"; };
+		9215F3BAAFA74B8DA31F85A94B3E59BF /* Pods-HotelzzzTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HotelzzzTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		973924E81753373D542DF217C324163C /* ResourceBundle-CDAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CDAlertView-Info.plist"; sourceTree = "<group>"; };
+		9B564058B218BC0D31B49632D6A9BBD2 /* ImageHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageHelper.swift; path = CDAlertView/Classes/ImageHelper.swift; sourceTree = "<group>"; };
+		A4DE615A331ADC5062B7ED729A260D2F /* Pods-HotelzzzTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HotelzzzTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A7747D7AC8E0760645C13154E3D9F06B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA24EAFE182FFA2F9F86AFCFF0BBA16C /* Pods-Hotelzzz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hotelzzz.debug.xcconfig"; sourceTree = "<group>"; };
+		AE72441303809054CC79433E4358EB7B /* Pods_HotelzzzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HotelzzzTests.framework; path = "Pods-HotelzzzTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18B00CC0C544514F7F6622C75BE18D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DEFB16B729A52D41323F52B948C2B3 /* Pods-HotelzzzTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HotelzzzTests.modulemap"; sourceTree = "<group>"; };
+		B595FE8E2C8DE879917C8B7671EE2D4C /* BRYXBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BRYXBanner.modulemap; sourceTree = "<group>"; };
+		B94B5836B113480AE9BB9A9CC065E44B /* BRYXBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BRYXBanner-dummy.m"; sourceTree = "<group>"; };
+		C2A34980A10727732B4B62C13EAD4B13 /* Pods-Hotelzzz-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hotelzzz-frameworks.sh"; sourceTree = "<group>"; };
+		C46C7FB1A915DEDD293D37E461397328 /* Pods-HotelzzzTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HotelzzzTests-dummy.m"; sourceTree = "<group>"; };
+		C4DB19447508B1925D2BD68D6977848E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DC28B849C566682250C2390491B25A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1685BE8B34AB1B279295113F17A502C /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSpinner.framework; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17B1645424F3BB387BF0F797450750D /* Pods-Hotelzzz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hotelzzz.release.xcconfig"; sourceTree = "<group>"; };
+		D4E51B7FF974706B7B8B930CDDE66FEA /* Pods-HotelzzzTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HotelzzzTests-resources.sh"; sourceTree = "<group>"; };
+		F37A59C954C183199634A053EC40F77B /* CDAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDAlertView-dummy.m"; sourceTree = "<group>"; };
+		FA497942C6AD5E62ABFB1F96F922D428 /* CDAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDAlertView.xcconfig; sourceTree = "<group>"; };
+		FCA7BAFFABFDD8802808B1EA83A92799 /* CDAlertHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertHeaderView.swift; path = CDAlertView/Classes/CDAlertHeaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		354DE64D1AA7D8C8FC211C6BCA9466AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBC2E02CCF86D11EDA2A1253202B37D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CF0B3526DE8EF9EE191DE63FF61AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A8B647A9CA215444CE33C17F6FD94F /* Foundation.framework in Frameworks */,
+				C0379FEF9258A930B8B0D633BF9E4682 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61EF6A9BC6C175FE352CC717AE7884F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B651FC90A318063FE60E3A71808D02 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5E7394EC299EA6B302D98ACD557C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676C1D7B9909AD00CEC0071CAE28B5BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5781823FCF13DFC0D691BC350571CB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFEDB588257462A654E92018127BD94 /* Foundation.framework in Frameworks */,
+				F858215DA8521C35488052F43614E88F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D7A0FAD5252F09F8E7F94123D02B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		101B8CEF631340CD5E9D2275613F5EC8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B595FE8E2C8DE879917C8B7671EE2D4C /* BRYXBanner.modulemap */,
+				625ED2EB342ED6432FAF80E2C51790F6 /* BRYXBanner.xcconfig */,
+				B94B5836B113480AE9BB9A9CC065E44B /* BRYXBanner-dummy.m */,
+				6AB0870837A93B87F2B85358E39B4F5D /* BRYXBanner-prefix.pch */,
+				2246BEAFB2094D613B59D0A9BD14F6E8 /* BRYXBanner-umbrella.h */,
+				B18B00CC0C544514F7F6622C75BE18D3 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BRYXBanner";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60F77F6CF073B0A40F3C5DB7EE640329 /* Pods-HotelzzzTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DB19447508B1925D2BD68D6977848E /* Info.plist */,
+				B2DEFB16B729A52D41323F52B948C2B3 /* Pods-HotelzzzTests.modulemap */,
+				A4DE615A331ADC5062B7ED729A260D2F /* Pods-HotelzzzTests-acknowledgements.markdown */,
+				9215F3BAAFA74B8DA31F85A94B3E59BF /* Pods-HotelzzzTests-acknowledgements.plist */,
+				C46C7FB1A915DEDD293D37E461397328 /* Pods-HotelzzzTests-dummy.m */,
+				452761C54BFAF688A30BBEDC83EA9565 /* Pods-HotelzzzTests-frameworks.sh */,
+				D4E51B7FF974706B7B8B930CDDE66FEA /* Pods-HotelzzzTests-resources.sh */,
+				8C9BF1F330BC663D6EC8325DF2043CEA /* Pods-HotelzzzTests-umbrella.h */,
+				0FE924C3F8061F2FB3DAAB21DDBEDFBE /* Pods-HotelzzzTests.debug.xcconfig */,
+				0ADD48A4157B2976D022A5E4719C54F7 /* Pods-HotelzzzTests.release.xcconfig */,
+			);
+			name = "Pods-HotelzzzTests";
+			path = "Target Support Files/Pods-HotelzzzTests";
+			sourceTree = "<group>";
+		};
+		632359FD590CD1B935A0127326C28144 /* Pods-Hotelzzz */ = {
+			isa = PBXGroup;
+			children = (
+				42D7999A3FFF07800C92300B5185D6A0 /* Info.plist */,
+				207CA07E4FBF1975B95770FA47A0EBE2 /* Pods-Hotelzzz.modulemap */,
+				0605E643F72B22C730A1F3E5CADB0395 /* Pods-Hotelzzz-acknowledgements.markdown */,
+				370CADC71714C33433699F2E9F2E4F9B /* Pods-Hotelzzz-acknowledgements.plist */,
+				7FF18A15110D9EF5CAC4A79848E7EDBA /* Pods-Hotelzzz-dummy.m */,
+				C2A34980A10727732B4B62C13EAD4B13 /* Pods-Hotelzzz-frameworks.sh */,
+				810923D5E5FF2FD6FBBDDF38DFE527C5 /* Pods-Hotelzzz-resources.sh */,
+				345A8781614BA248A8DA194D8606DDA6 /* Pods-Hotelzzz-umbrella.h */,
+				AA24EAFE182FFA2F9F86AFCFF0BBA16C /* Pods-Hotelzzz.debug.xcconfig */,
+				D17B1645424F3BB387BF0F797450750D /* Pods-Hotelzzz.release.xcconfig */,
+			);
+			name = "Pods-Hotelzzz";
+			path = "Target Support Files/Pods-Hotelzzz";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				C6822885DABD1C9F689529741CF0C634 /* Pods */,
+				84E7722DC09146B9E574BDCA60F6FDB5 /* Products */,
+				8E405FC7F2F2D4174EEC2F2DACBA0D87 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84E7722DC09146B9E574BDCA60F6FDB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81CA5C22FEDCD0B938211E7CA38FC4E3 /* BRYXBanner.framework */,
+				06027A73999F0DCE100AA7216FC55D54 /* CDAlertView.bundle */,
+				1578D0377C58B5095CED6C1198DA4820 /* CDAlertView.framework */,
+				230BDF25C44CC5157FD13B2A7B3673A3 /* Pods_Hotelzzz.framework */,
+				AE72441303809054CC79433E4358EB7B /* Pods_HotelzzzTests.framework */,
+				D1685BE8B34AB1B279295113F17A502C /* SwiftSpinner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		884C356BEE18C08A58A0873FA39D824F /* BRYXBanner */ = {
+			isa = PBXGroup;
+			children = (
+				4B47168813B9C491E6281417BC526EA7 /* Banner.swift */,
+				101B8CEF631340CD5E9D2275613F5EC8 /* Support Files */,
+			);
+			name = BRYXBanner;
+			path = BRYXBanner;
+			sourceTree = "<group>";
+		};
+		8B575E443023FE37387BF0F6A5CD1210 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4DC28B849C566682250C2390491B25A /* Info.plist */,
+				4D649BAB858EA1AB7C0ED0E980F49D98 /* SwiftSpinner.modulemap */,
+				68D6D0F762518F78A48689D2909C72D2 /* SwiftSpinner.xcconfig */,
+				51470B427D3879672EE0B26E5218BC04 /* SwiftSpinner-dummy.m */,
+				46391AC9523D8164919F613846A1D2DE /* SwiftSpinner-prefix.pch */,
+				3DC272D99F9025A6FCE531CD51A15D9C /* SwiftSpinner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSpinner";
+			sourceTree = "<group>";
+		};
+		8E405FC7F2F2D4174EEC2F2DACBA0D87 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				632359FD590CD1B935A0127326C28144 /* Pods-Hotelzzz */,
+				60F77F6CF073B0A40F3C5DB7EE640329 /* Pods-HotelzzzTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		94C65045BC9366883ED41A015F657D11 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CF5791E564321969CB4D6F81A80193A /* CDAlertView.modulemap */,
+				FA497942C6AD5E62ABFB1F96F922D428 /* CDAlertView.xcconfig */,
+				F37A59C954C183199634A053EC40F77B /* CDAlertView-dummy.m */,
+				79E78387100F375DC64989BA420CF241 /* CDAlertView-prefix.pch */,
+				4B998AB2EF41EBFFFC90948B58CD00C6 /* CDAlertView-umbrella.h */,
+				A7747D7AC8E0760645C13154E3D9F06B /* Info.plist */,
+				973924E81753373D542DF217C324163C /* ResourceBundle-CDAlertView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CDAlertView";
+			sourceTree = "<group>";
+		};
+		98FE226F9B6C3440B7E4E762BB5265C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CB9F806D82101F962A16D3E8F9D3320 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A052F42F6407AF4D38ABBC47386937F4 /* SwiftSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				3CD81B6112A3C7E3E8B119C7029080C8 /* SwiftSpinner.h */,
+				6BE6C0DBE78EC59EA45208EEEFF5E807 /* SwiftSpinner.swift */,
+				8B575E443023FE37387BF0F6A5CD1210 /* Support Files */,
+			);
+			name = SwiftSpinner;
+			path = SwiftSpinner;
+			sourceTree = "<group>";
+		};
+		C6822885DABD1C9F689529741CF0C634 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				884C356BEE18C08A58A0873FA39D824F /* BRYXBanner */,
+				C784E555C34D119EF2E82CF0C72A7932 /* CDAlertView */,
+				A052F42F6407AF4D38ABBC47386937F4 /* SwiftSpinner */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C784E555C34D119EF2E82CF0C72A7932 /* CDAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				FCA7BAFFABFDD8802808B1EA83A92799 /* CDAlertHeaderView.swift */,
+				0FF69E1CD025A74C04F2E312D3971AD2 /* CDAlertView.swift */,
+				9B564058B218BC0D31B49632D6A9BBD2 /* ImageHelper.swift */,
+				0B9876062A9DF84B19FC96714D951D1F /* LayoutConstraintsExtension.swift */,
+				98FE226F9B6C3440B7E4E762BB5265C9 /* Resources */,
+				94C65045BC9366883ED41A015F657D11 /* Support Files */,
+			);
+			name = CDAlertView;
+			path = CDAlertView;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1DC09B3474FCADD5ADF737E95EE9BE04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B4B4360749E1D13CF2C52D04F56064 /* CDAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB5E529BC8B8B50F55DEA2E5B6A9750 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1C59AD71C484C610284C91BA7911A2 /* Pods-Hotelzzz-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6671AC128A144C509AF36855D41D6FC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12B1266D463E38B918C6D0F2D66C155B /* SwiftSpinner-umbrella.h in Headers */,
+				EA6C66A6B0C5DCC9E01E61F8EE20F181 /* SwiftSpinner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FB9EFE5D23BF6878733455A0FD6237 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139FF6DA1D05B90F2631E069C8D13832 /* BRYXBanner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD647761C75CFBC2BE60F21B981C0516 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9376BEF935E32C7927DF99A961A392D7 /* Pods-HotelzzzTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F3B36547C3C2CC3060475E614BCBF32 /* BRYXBanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BD1E399966C1498C57653EC9B0AEB0 /* Build configuration list for PBXNativeTarget "BRYXBanner" */;
+			buildPhases = (
+				9D79E16B04D0743401F742E1F773820C /* Sources */,
+				354DE64D1AA7D8C8FC211C6BCA9466AB /* Frameworks */,
+				E0FB9EFE5D23BF6878733455A0FD6237 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRYXBanner;
+			productName = BRYXBanner;
+			productReference = 81CA5C22FEDCD0B938211E7CA38FC4E3 /* BRYXBanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		369C26E0019831DFC30E7122499AB269 /* CDAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F7EAFBA6323B60EAD537F74FB49C1C /* Build configuration list for PBXNativeTarget "CDAlertView" */;
+			buildPhases = (
+				E5620E1094B413A427B2891CFB4E97EA /* Sources */,
+				C5781823FCF13DFC0D691BC350571CB6 /* Frameworks */,
+				4A7B66480A451A9A0F45E5FFBB662155 /* Resources */,
+				1DC09B3474FCADD5ADF737E95EE9BE04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF1460637310CBFB3BB7F13CEEDCA24E /* PBXTargetDependency */,
+			);
+			name = CDAlertView;
+			productName = CDAlertView;
+			productReference = 1578D0377C58B5095CED6C1198DA4820 /* CDAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6912206FC0B4F3E0FF60337B72D24538 /* SwiftSpinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8C97B0A4DEDB14A4EC52485F4C3AE9D /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
+			buildPhases = (
+				196305D786B304FE050DA1A9F4DDFDCA /* Sources */,
+				46CF0B3526DE8EF9EE191DE63FF61AAF /* Frameworks */,
+				6671AC128A144C509AF36855D41D6FC3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSpinner;
+			productName = SwiftSpinner;
+			productReference = D1685BE8B34AB1B279295113F17A502C /* SwiftSpinner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F3980583CB8A486FAE252F4B5F72EA0 /* Pods-HotelzzzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91D1A97E5626690A96C3588808D75BC /* Build configuration list for PBXNativeTarget "Pods-HotelzzzTests" */;
+			buildPhases = (
+				834469CB46609586609321ABD90E3F7B /* Sources */,
+				A61EF6A9BC6C175FE352CC717AE7884F /* Frameworks */,
+				FD647761C75CFBC2BE60F21B981C0516 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HotelzzzTests";
+			productName = "Pods-HotelzzzTests";
+			productReference = AE72441303809054CC79433E4358EB7B /* Pods_HotelzzzTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4BDF1191BBE4F429F08A241D8B53E2A /* CDAlertView-CDAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD56C041D949064F5CA7899644728E35 /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */;
+			buildPhases = (
+				A4DE70E8AF00CFBCA3AA8D712980DD0D /* Sources */,
+				D2D7A0FAD5252F09F8E7F94123D02B17 /* Frameworks */,
+				E4FB523B26F7FAEB936EB0B566954176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CDAlertView-CDAlertView";
+			productName = "CDAlertView-CDAlertView";
+			productReference = 06027A73999F0DCE100AA7216FC55D54 /* CDAlertView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		ED9310791E00C0859B45C7404756B729 /* Pods-Hotelzzz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789B0775A64C1385A0834E55799454C1 /* Build configuration list for PBXNativeTarget "Pods-Hotelzzz" */;
+			buildPhases = (
+				D6AA868FB41D42E68E948F78189AA7AF /* Sources */,
+				BE5E7394EC299EA6B302D98ACD557C02 /* Frameworks */,
+				3FB5E529BC8B8B50F55DEA2E5B6A9750 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2517D6A26A4C1BC67F53E75DABA8A0A /* PBXTargetDependency */,
+				75BD9421C6036F29ACF724F94B43543D /* PBXTargetDependency */,
+				6261B69479EBE5D81DA8CA9CA737F0E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hotelzzz";
+			productName = "Pods-Hotelzzz";
+			productReference = 230BDF25C44CC5157FD13B2A7B3673A3 /* Pods_Hotelzzz.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 84E7722DC09146B9E574BDCA60F6FDB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F3B36547C3C2CC3060475E614BCBF32 /* BRYXBanner */,
+				369C26E0019831DFC30E7122499AB269 /* CDAlertView */,
+				C4BDF1191BBE4F429F08A241D8B53E2A /* CDAlertView-CDAlertView */,
+				ED9310791E00C0859B45C7404756B729 /* Pods-Hotelzzz */,
+				8F3980583CB8A486FAE252F4B5F72EA0 /* Pods-HotelzzzTests */,
+				6912206FC0B4F3E0FF60337B72D24538 /* SwiftSpinner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A7B66480A451A9A0F45E5FFBB662155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49512C5E482B94F34654AB784EFE0611 /* CDAlertView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FB523B26F7FAEB936EB0B566954176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408FDBFC38CCA098969881D1C681B36 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		196305D786B304FE050DA1A9F4DDFDCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484977210E3DE2D043FDB3B5C76C5F78 /* SwiftSpinner-dummy.m in Sources */,
+				3A64A63ED98B1AF2295B0DE904896702 /* SwiftSpinner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834469CB46609586609321ABD90E3F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904CB5C0BC590834A3C20604321E3703 /* Pods-HotelzzzTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D79E16B04D0743401F742E1F773820C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBD4BDD68023529A9ACE2A85EC65ADE /* Banner.swift in Sources */,
+				9CEE806C686E8F80DADE5C41C8D20F37 /* BRYXBanner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DE70E8AF00CFBCA3AA8D712980DD0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6AA868FB41D42E68E948F78189AA7AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B847756BE6BCBD0307B3B25556A5FF7 /* Pods-Hotelzzz-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5620E1094B413A427B2891CFB4E97EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD7DDE53F9EF82FEC5515E6D42F7475 /* CDAlertHeaderView.swift in Sources */,
+				785D8DA08BB47D25289C1ACED7F270EB /* CDAlertView-dummy.m in Sources */,
+				85D793A244F6E144AC81BE59B147E1A2 /* CDAlertView.swift in Sources */,
+				177A46EA487255FEF53454F1E3DE2723 /* ImageHelper.swift in Sources */,
+				DDA5FEC2649A4CC2E74661569A161B6F /* LayoutConstraintsExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6261B69479EBE5D81DA8CA9CA737F0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSpinner;
+			target = 6912206FC0B4F3E0FF60337B72D24538 /* SwiftSpinner */;
+			targetProxy = 7F5384EE97FE6AED4FE05543734CFE93 /* PBXContainerItemProxy */;
+		};
+		75BD9421C6036F29ACF724F94B43543D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDAlertView;
+			target = 369C26E0019831DFC30E7122499AB269 /* CDAlertView */;
+			targetProxy = 90FA6BF057496F761F760326AB409920 /* PBXContainerItemProxy */;
+		};
+		BF1460637310CBFB3BB7F13CEEDCA24E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CDAlertView-CDAlertView";
+			target = C4BDF1191BBE4F429F08A241D8B53E2A /* CDAlertView-CDAlertView */;
+			targetProxy = 9E022DE6025B80186394648B956C2EE7 /* PBXContainerItemProxy */;
+		};
+		D2517D6A26A4C1BC67F53E75DABA8A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BRYXBanner;
+			target = 0F3B36547C3C2CC3060475E614BCBF32 /* BRYXBanner */;
+			targetProxy = 784652BFD4988D839BCD90D0204BF375 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1190EFE9931591CAA64D485CBE32BDEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625ED2EB342ED6432FAF80E2C51790F6 /* BRYXBanner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BRYXBanner/BRYXBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRYXBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BRYXBanner/BRYXBanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BRYXBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1569B57FF4F92C4BF4066D62D7D43341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA497942C6AD5E62ABFB1F96F922D428 /* CDAlertView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CDAlertView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/ResourceBundle-CDAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5194C818B9837B6050BCC6C6AD20260C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA497942C6AD5E62ABFB1F96F922D428 /* CDAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CDAlertView/CDAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		544A9CAD077997D32366DC95CF3E4356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA24EAFE182FFA2F9F86AFCFF0BBA16C /* Pods-Hotelzzz.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hotelzzz/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hotelzzz/Pods-Hotelzzz.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Hotelzzz;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74EDE97E6919E1C46E61C839288F0000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ADD48A4157B2976D022A5E4719C54F7 /* Pods-HotelzzzTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HotelzzzTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HotelzzzTests/Pods-HotelzzzTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HotelzzzTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A02DF40790E8B9093789A28C5DAAC808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D6D0F762518F78A48689D2909C72D2 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A77D87B46359DC4743520D6F9AC644C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17B1645424F3BB387BF0F797450750D /* Pods-Hotelzzz.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hotelzzz/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hotelzzz/Pods-Hotelzzz.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Hotelzzz;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A907136BF42FBBB9AD41DCAA4E4D850A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625ED2EB342ED6432FAF80E2C51790F6 /* BRYXBanner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BRYXBanner/BRYXBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRYXBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BRYXBanner/BRYXBanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BRYXBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3ECA1D8FEF74D763FF7764F5BA7221A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA497942C6AD5E62ABFB1F96F922D428 /* CDAlertView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CDAlertView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/ResourceBundle-CDAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CCD0A31196EAEB142F9D38470BE81B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA497942C6AD5E62ABFB1F96F922D428 /* CDAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CDAlertView/CDAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2CD5953A266050FB3DFD6ADE82D8368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE924C3F8061F2FB3DAAB21DDBEDFBE /* Pods-HotelzzzTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HotelzzzTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HotelzzzTests/Pods-HotelzzzTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HotelzzzTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE51602C4A584458E7B0574654F0FC6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D6D0F762518F78A48689D2909C72D2 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789B0775A64C1385A0834E55799454C1 /* Build configuration list for PBXNativeTarget "Pods-Hotelzzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544A9CAD077997D32366DC95CF3E4356 /* Debug */,
+				A77D87B46359DC4743520D6F9AC644C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F7EAFBA6323B60EAD537F74FB49C1C /* Build configuration list for PBXNativeTarget "CDAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD0A31196EAEB142F9D38470BE81B6A /* Debug */,
+				5194C818B9837B6050BCC6C6AD20260C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BD1E399966C1498C57653EC9B0AEB0 /* Build configuration list for PBXNativeTarget "BRYXBanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1190EFE9931591CAA64D485CBE32BDEB /* Debug */,
+				A907136BF42FBBB9AD41DCAA4E4D850A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD56C041D949064F5CA7899644728E35 /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3ECA1D8FEF74D763FF7764F5BA7221A /* Debug */,
+				1569B57FF4F92C4BF4066D62D7D43341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8C97B0A4DEDB14A4EC52485F4C3AE9D /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02DF40790E8B9093789A28C5DAAC808 /* Debug */,
+				DE51602C4A584458E7B0574654F0FC6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91D1A97E5626690A96C3588808D75BC /* Build configuration list for PBXNativeTarget "Pods-HotelzzzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CD5953A266050FB3DFD6ADE82D8368 /* Debug */,
+				74EDE97E6919E1C46E61C839288F0000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -9,13 +9,30 @@
 import Foundation
 import UIKit
 
-
 class HotelViewController: UIViewController {
-    var hotelName: String = ""
-    @IBOutlet var hotelNameLabel: UILabel!
-
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var hotelNameLabel: UILabel!
+    @IBOutlet weak var hotelAddressLabel: UILabel!
+    @IBOutlet weak var hotelPriceLabel: UILabel!
+    
+    var hotel: HotelResult?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = ""
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        hotelNameLabel.text = hotelName
+        
+        if let hotelDetails = hotel {
+            imageView.image = nil
+            imageView.downloadedFrom(link: hotelDetails.urlString)
+            imageView.contentMode = .scaleAspectFit
+            hotelNameLabel.text = hotelDetails.name
+            hotelAddressLabel.text = hotelDetails.address
+            hotelPriceLabel.text = Formatters.sharedInstance.stringFromPrice(price: hotelDetails.price, currencyCode: "USD")
+        }
     }
 }

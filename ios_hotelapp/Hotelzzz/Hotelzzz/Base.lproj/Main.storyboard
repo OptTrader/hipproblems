@@ -1,15 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PWI-c0-zZZ">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PWI-c0-zZZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Hotelzzz-->
         <scene sceneID="tne-QT-ifu">
@@ -45,13 +50,13 @@
                                 <rect key="frame" x="16" y="190" width="343" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-Nc-Zbr">
-                                        <rect key="frame" x="0.0" y="0.0" width="172" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDw-Rs-RxP">
-                                        <rect key="frame" x="172" y="0.0" width="171" height="30"/>
+                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -65,14 +70,14 @@
                                 <rect key="frame" x="16" y="220" width="343" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icd-xQ-tLg">
-                                        <rect key="frame" x="0.0" y="0.0" width="172" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
                                         <state key="normal" title="2017-04-01"/>
                                         <connections>
                                             <segue destination="2hl-6e-Iig" kind="presentation" identifier="pick_check_in_date" id="WcD-aZ-s7t"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeC-8W-8hU">
-                                        <rect key="frame" x="172" y="0.0" width="171" height="30"/>
+                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
                                         <state key="normal" title="2017-04-04"/>
                                         <connections>
                                             <segue destination="2hl-6e-Iig" kind="presentation" identifier="pick_check_out_date" id="p72-FD-jVd"/>
@@ -222,35 +227,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You picked:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NU-Gx-VQj">
-                                <rect key="frame" x="143" y="139" width="89" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ENd-Te-BD3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="dE1-vd-8Hd"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJ4-m6-KjK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd9-Jd-ZFb">
+                                        <rect key="frame" x="8" y="213" width="359" height="29"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Hd9-Jd-ZFb" secondAttribute="bottom" constant="8" id="eyo-FZ-4ix"/>
+                                    <constraint firstItem="Hd9-Jd-ZFb" firstAttribute="leading" secondItem="FJ4-m6-KjK" secondAttribute="leading" constant="8" id="fb4-EI-alw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hd9-Jd-ZFb" secondAttribute="trailing" constant="8" id="y5S-em-0df"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCQ-ya-Gqa">
+                                <rect key="frame" x="8" y="322" width="68" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.21176470588235294" green="0.27843137254901962" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xY-Ql-xxp">
-                                <rect key="frame" x="181" y="168" width="14" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VF3-EY-hBp">
+                                <rect key="frame" x="327" y="322" width="40" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.2784313725" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7NU-Gx-VQj" firstAttribute="top" secondItem="TMd-ax-uEb" secondAttribute="bottom" constant="75" id="6KJ-tx-b5f"/>
-                            <constraint firstItem="7NU-Gx-VQj" firstAttribute="centerX" secondItem="edA-w1-8bO" secondAttribute="centerX" id="BE6-MU-u78"/>
-                            <constraint firstItem="5xY-Ql-xxp" firstAttribute="top" secondItem="7NU-Gx-VQj" secondAttribute="bottom" constant="8" id="MMe-Vm-oJb"/>
-                            <constraint firstItem="5xY-Ql-xxp" firstAttribute="centerX" secondItem="edA-w1-8bO" secondAttribute="centerX" id="kly-vj-tIS"/>
+                            <constraint firstItem="FJ4-m6-KjK" firstAttribute="leading" secondItem="ENd-Te-BD3" secondAttribute="leading" id="4LW-Kv-qmA"/>
+                            <constraint firstItem="FJ4-m6-KjK" firstAttribute="trailing" secondItem="ENd-Te-BD3" secondAttribute="trailing" id="5N4-zC-tv7"/>
+                            <constraint firstItem="cCQ-ya-Gqa" firstAttribute="top" secondItem="FJ4-m6-KjK" secondAttribute="bottom" constant="8" id="7qy-w4-t6e"/>
+                            <constraint firstItem="ENd-Te-BD3" firstAttribute="leading" secondItem="edA-w1-8bO" secondAttribute="leading" id="BdY-fz-3xs"/>
+                            <constraint firstAttribute="trailing" secondItem="ENd-Te-BD3" secondAttribute="trailing" id="DsQ-aZ-2hc"/>
+                            <constraint firstItem="ENd-Te-BD3" firstAttribute="top" secondItem="TMd-ax-uEb" secondAttribute="bottom" id="Jmt-o1-2na"/>
+                            <constraint firstAttribute="trailing" secondItem="VF3-EY-hBp" secondAttribute="trailing" constant="8" id="T0F-2t-ANY"/>
+                            <constraint firstItem="FJ4-m6-KjK" firstAttribute="height" secondItem="ENd-Te-BD3" secondAttribute="height" id="TKI-dF-bjF"/>
+                            <constraint firstItem="FJ4-m6-KjK" firstAttribute="top" secondItem="ENd-Te-BD3" secondAttribute="top" id="cFN-ez-emM"/>
+                            <constraint firstItem="cCQ-ya-Gqa" firstAttribute="leading" secondItem="edA-w1-8bO" secondAttribute="leading" constant="8" id="iSp-IB-nEW"/>
+                            <constraint firstItem="FJ4-m6-KjK" firstAttribute="bottom" secondItem="ENd-Te-BD3" secondAttribute="bottom" id="nfE-p4-gRV"/>
+                            <constraint firstItem="VF3-EY-hBp" firstAttribute="top" secondItem="FJ4-m6-KjK" secondAttribute="bottom" constant="8" id="yqA-25-NyH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Hotel Details" id="BkP-pu-yFu"/>
                     <connections>
-                        <outlet property="hotelNameLabel" destination="5xY-Ql-xxp" id="Bfq-mC-hhs"/>
+                        <outlet property="hotelAddressLabel" destination="cCQ-ya-Gqa" id="Ang-MF-Aqu"/>
+                        <outlet property="hotelNameLabel" destination="Hd9-Jd-ZFb" id="NLL-hW-8Zc"/>
+                        <outlet property="hotelPriceLabel" destination="VF3-EY-hBp" id="v9s-vS-Px1"/>
+                        <outlet property="imageView" destination="ENd-Te-BD3" id="8q5-dX-lob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jN-m1-8O9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1538" y="740"/>
+            <point key="canvasLocation" x="1536.8" y="739.88005997001505"/>
         </scene>
         <!--Date Picker View Controller-->
         <scene sceneID="xh7-QO-b3X">

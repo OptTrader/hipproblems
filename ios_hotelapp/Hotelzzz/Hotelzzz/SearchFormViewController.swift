@@ -23,26 +23,26 @@ class SearchFormViewController: UIViewController, DatePickerViewControllerDelega
     @IBOutlet var locationField: UITextField!
     @IBOutlet var openDateStartPickerButton: UIButton!
     @IBOutlet var openDateEndPickerButton: UIButton!
-
+    
     var checkInDate: Date = Date() { didSet { _updateCheckIn() } }
     var checkOutDate: Date = Date()  { didSet { _updateCheckOut() } }
     fileprivate var _pickingDateType: DateType? = nil
-
+    
     private func _updateCheckIn() {
         openDateStartPickerButton.setTitle(dateFormatter.string(from: checkInDate), for: .normal)
     }
-
+    
     private func _updateCheckOut() {
         openDateEndPickerButton.setTitle(dateFormatter.string(from: checkOutDate), for: .normal)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         _updateCheckIn()
         _updateCheckOut()
         dateFormatter.timeStyle = .none
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case .some("pick_check_in_date"):
@@ -64,17 +64,17 @@ class SearchFormViewController: UIViewController, DatePickerViewControllerDelega
             fatalError("Can't handle this segue")
         }
     }
-
+    
     private func _handleDatePickerSegue(destination: UIViewController, date: Date, title: String) {
         guard let navVC = destination as? UINavigationController,
             let datePickerVC = navVC.topViewController as? DatePickerViewController else {
-            fatalError("Segue destination has unexpected type")
+                fatalError("Segue destination has unexpected type")
         }
         datePickerVC.navigationItem.title = title
         datePickerVC.initialDate = date
         datePickerVC.delegate = self
     }
-
+    
     func datePicker(viewController: DatePickerViewController, didSelectDate date: Date) {
         switch _pickingDateType {
         case .some(.checkIn): self.checkInDate = date

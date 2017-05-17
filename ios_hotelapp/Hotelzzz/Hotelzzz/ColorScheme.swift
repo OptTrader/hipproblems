@@ -9,10 +9,6 @@
 import UIKit
 
 struct ColorScheme {
-    static let navigationBarForegroundColor = UIColor.colorWithHex(hex: "00B6E8")
-    static let navigationBarBackgroundColor = UIColor.black
-    static let primaryBackgroundColor = UIColor.colorWithHex(hex: "01090F")
-    static let cellSeparatorColor = UIColor(white: 1, alpha: 0.2)
-    static let cellPrimaryTextColor = UIColor.colorWithHex(hex: "00B6E8")
-    static let cellSecondaryTextColor = UIColor.colorWithHex(hex: "7498A6")
+    static let navigationBarForegroundColor = UIColor.white
+    static let navigationBarBackgroundColor = UIColor.colorWithHex(hex: "3294DD")
 }
