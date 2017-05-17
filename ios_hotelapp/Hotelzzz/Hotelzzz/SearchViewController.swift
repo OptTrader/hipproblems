@@ -49,7 +49,7 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
                 
                 // DECLARE YOUR MESSAGE HANDLERS HERE
                 userContentController.add(self, name: Constants.ApiReady)
-                
+                userContentController.add(self, name: Constants.HotelApiResultsReady)
                 userContentController.add(self, name: Constants.HotelApiHotelSelected)
                 
                 return userContentController
@@ -84,8 +84,18 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
                     "window.JSAPI.runHotelSearch(\(searchToRun.asJSONString))",
                     completionHandler: nil)
             
-//            case Constants.HotelApiSearchReady:
-//                gaurd let result = 
+            case Constants.HotelApiResultsReady:
+                if let body = message.body as? [String: Any] {
+//                    print(body)
+                    if let results = body["results"] as? [[String: Any]] {
+//                        print(results.count)
+                        self.title = "\(results.count) Hotels"
+                    }
+                } else {
+                    fatalError("Search Results Error")
+            }
+            
+
             
             case Constants.HotelApiHotelSelected:
                 if let body = message.body as? [String: Any] {
@@ -100,7 +110,9 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
                         }
                     }
                    
-                }
+                } else {
+                    fatalError("Hotel Select Error")
+            }
 //            self.performSegue(withIdentifier: "hotel_details", sender: nil)
             
         default: break
@@ -120,7 +132,7 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
     
     fileprivate struct Constants {
         static let ApiReady = "API_READY"
-        static let HotelApiSearchReady = "HOTEL_API_SEARCH_READY"
+        static let HotelApiResultsReady = "HOTEL_API_RESULTS_READY"
         static let HotelApiHotelSelected = "HOTEL_API_HOTEL_SELECTED"
         static let HotelDetailsSegue = "hotel_details"
     }
