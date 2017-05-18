@@ -29,9 +29,11 @@ class HotelViewController: UIViewController {
         if let hotelDetails = hotel {
             imageView.image = nil
             imageView.downloadedFrom(link: hotelDetails.urlString)
-            imageView.contentMode = .scaleAspectFit
+            imageView.contentMode = .scaleAspectFill
+            imageView.clipsToBounds = true
             hotelNameLabel.text = hotelDetails.name
             hotelAddressLabel.text = hotelDetails.address
+            hotelAddressLabel.adjustsFontSizeToFitWidth = true
             hotelPriceLabel.text = Formatters.sharedInstance.stringFromPrice(price: hotelDetails.price, currencyCode: "USD")
         }
     }

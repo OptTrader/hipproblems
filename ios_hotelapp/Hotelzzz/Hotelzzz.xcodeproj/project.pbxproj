@@ -15,6 +15,7 @@
 		7A5AFE861ECBB2200067D208 /* HotelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AFE851ECBB2200067D208 /* HotelResult.swift */; };
 		7A5EEBDF1ECC02560047DB75 /* UIImage Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EEBDE1ECC02560047DB75 /* UIImage Extension.swift */; };
 		7A5EEBE11ECC074C0047DB75 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EEBE01ECC074C0047DB75 /* Formatters.swift */; };
+		7AA35A2C1ECCD16000B2301C /* SortedResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA35A2B1ECCD16000B2301C /* SortedResultsViewController.swift */; };
 		F222BCD61E81E72500CE0EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BCD51E81E72500CE0EB2 /* AppDelegate.swift */; };
 		F222BCD81E81E72500CE0EB2 /* SearchFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BCD71E81E72500CE0EB2 /* SearchFormViewController.swift */; };
 		F222BCDB1E81E72500CE0EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F222BCD91E81E72500CE0EB2 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		7A5AFE851ECBB2200067D208 /* HotelResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelResult.swift; sourceTree = "<group>"; };
 		7A5EEBDE1ECC02560047DB75 /* UIImage Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage Extension.swift"; sourceTree = "<group>"; };
 		7A5EEBE01ECC074C0047DB75 /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		7AA35A2B1ECCD16000B2301C /* SortedResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortedResultsViewController.swift; sourceTree = "<group>"; };
 		AEFBB32A0F1AC7054368BAB5 /* Pods_Hotelzzz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotelzzz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBCA9AF2D9B6BDBBB1FE055 /* Pods-Hotelzzz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotelzzz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hotelzzz/Pods-Hotelzzz.debug.xcconfig"; sourceTree = "<group>"; };
 		EA83EEE588D21A750AEBD1C0 /* Pods-Hotelzzz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotelzzz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hotelzzz/Pods-Hotelzzz.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				F222BCF51E830D4C00CE0EB2 /* DatePickerViewController.swift */,
 				F222BCF71E83175000CE0EB2 /* SearchViewController.swift */,
 				F222BCF91E83235F00CE0EB2 /* HotelViewController.swift */,
+				7AA35A2B1ECCD16000B2301C /* SortedResultsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -174,8 +177,8 @@
 			children = (
 				F222BCD91E81E72500CE0EB2 /* Main.storyboard */,
 				7A5AFE7D1ECBA8EC0067D208 /* Controllers */,
-				7A5AFE7E1ECBA9050067D208 /* Extensions & Resources */,
 				7A5AFE7C1ECBA8E40067D208 /* Models */,
+				7A5AFE7E1ECBA9050067D208 /* Extensions & Resources */,
 				7A5AFE791ECBA54A0067D208 /* Supporting Files */,
 			);
 			path = Hotelzzz;
@@ -403,6 +406,7 @@
 				7A5EEBE11ECC074C0047DB75 /* Formatters.swift in Sources */,
 				7A5AFE781ECBA52F0067D208 /* Font.swift in Sources */,
 				F222BCF61E830D4C00CE0EB2 /* DatePickerViewController.swift in Sources */,
+				7AA35A2C1ECCD16000B2301C /* SortedResultsViewController.swift in Sources */,
 				F27251351E95A60E00222BC8 /* UIViewController+Extensions.swift in Sources */,
 				F222BCFA1E83235F00CE0EB2 /* HotelViewController.swift in Sources */,
 				7A5AFE861ECBB2200067D208 /* HotelResult.swift in Sources */,

@@ -5,8 +5,9 @@
 //  Created by Steve Johnson on 3/21/17.
 //  Copyright © 2017 Hipmunk, Inc. All rights reserved.
 //
+//  TO DO:
 //  show hotel details - name, image, address, price
-//  nav bar design
+//  nav bar
 //  searching with number of results
 //  sort 
 //  filter

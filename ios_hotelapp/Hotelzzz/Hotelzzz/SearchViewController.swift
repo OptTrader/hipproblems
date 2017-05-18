@@ -21,7 +21,6 @@ private func jsonStringify(_ obj: [AnyHashable: Any]) -> String {
     return String(data: data, encoding: .utf8)!
 }
 
-
 class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate {
     
     struct Search {
@@ -40,6 +39,7 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
     
     private var _searchToRun: Search?
     var hotelDetails: HotelResult?
+    var sortID: Sort = .name
     
     lazy var webView: WKWebView = {
         let webView = WKWebView(frame: CGRect.zero, configuration: {
@@ -95,8 +95,6 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
                     fatalError("Search Results Error")
             }
             
-
-            
             case Constants.HotelApiHotelSelected:
                 if let body = message.body as? [String: Any] {
     //                print(body)
@@ -114,7 +112,6 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
                     fatalError("Hotel Select Error")
             }
 //            self.performSegue(withIdentifier: "hotel_details", sender: nil)
-            
         default: break
         }
     }
@@ -124,6 +121,11 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
             let hotelDetails = self.hotelDetails
             if let hotelVC = segue.destination as? HotelViewController {
                 hotelVC.hotel = hotelDetails
+            }
+        } else if segue.identifier == Constants.HotelSortSegue {
+            if let sortedNav = segue.destination as? UINavigationController {
+                let sortedResultsVC = sortedNav.visibleViewController as? SortedResultsViewController
+                sortedResultsVC?.delegate = self
             }
         }
     }
@@ -135,6 +137,13 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
         static let HotelApiResultsReady = "HOTEL_API_RESULTS_READY"
         static let HotelApiHotelSelected = "HOTEL_API_HOTEL_SELECTED"
         static let HotelDetailsSegue = "hotel_details"
+        static let HotelSortSegue = "select_sort"
     }
-    
+}
+
+extension SearchViewController: SortOptionsDelegate {
+    func sortOptionsSelected(viewController: SortedResultsViewController, _ sort: Sort) {
+        sortID = sort
+        self.webView.evaluateJavaScript("window.JSAPI.setHotelSort\(sortID)", completionHandler: nil)
+    }
 }

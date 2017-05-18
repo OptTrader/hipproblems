@@ -79,7 +79,7 @@ class SearchFormViewController: UIViewController, DatePickerViewControllerDelega
         switch _pickingDateType {
         case .some(.checkIn): self.checkInDate = date
         case .some(.checkOut): self.checkOutDate = date
-        default: return;
+        default: return
         }
     }
 }
